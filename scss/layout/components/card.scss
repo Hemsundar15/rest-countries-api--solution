@@ -1,0 +1,46 @@
+@use "./../../abstracts";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    margin: 32px;
+
+    background: abstracts.$clr--dark-blue;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__imageholder {
+        position: relative;
+        height: 200px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 32px 24px;
+
+        h1 {
+            color: abstracts.$clr--White;
+            font-size: 24px;
+            letter-spacing: -1px;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            h2 {
+                color: abstracts.$clr--White;
+                font-size: 18px;
+                letter-spacing: -1px;
+                font-weight: 600;
+            }
+
+            h3 {
+                color: abstracts.$clr--White;
+                font-weight: 300;
+            }
+        }
+    }
+}
