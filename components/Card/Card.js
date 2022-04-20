@@ -5,7 +5,7 @@ const Card = ({ country }) => {
     const { name, population, region, capital, flag, alpha3Code } = country;
 
     return (
-        <Link href={"countries/" + alpha3Code} passHref>
+        <Link href={"countries/" + alpha3Code.toLowerCase()} passHref>
             <div className="card">
                 <div className="card__imageholder">
                     <Image

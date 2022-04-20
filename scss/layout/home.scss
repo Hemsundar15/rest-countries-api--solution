@@ -1,4 +1,13 @@
+@use "../abstracts";
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
+
+    @media (min-width: abstracts.$layout-breakpoint-xlarge) {
+        padding: 100px;
+        grid-template-columns: 270px 270px 270px 270px;
+        justify-content: space-between;
+        gap: 70px;
+    }
 }
